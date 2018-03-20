@@ -9,6 +9,8 @@ GAME RULES:
 
 */
 
+// kpmg laptop
+
 var scores, roundScore, activePlayer, gamePlaying;
 
 init();
