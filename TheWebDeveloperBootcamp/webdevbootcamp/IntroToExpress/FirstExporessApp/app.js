@@ -11,10 +11,15 @@ app.get("/welcome/:name", function(req, res){
     res.send("Welcome to the new world Tim!!!");
 });
 
-app.get("*", function(req,res){
-    res.send("WRONG TURN!!!")
+app.get("/r/:subredditName", function(req,res){
+    console.log(req.params['subredditName']);
+    res.send("WELCOE TO SUBREDDIT!!!");
 });
 
+
+app.get("*", function(req,res){
+    res.send("WRONG TURN!!!");
+});
 
 app.listen(3000, function(){
     console.log("Server has started!!!");

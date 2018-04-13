@@ -25,5 +25,5 @@ app.get("/posts",function(req,res){
 });
 
 app.listen(3000,function(req,res){
-    console.log("Server starts listening!");
+    console.log("===============Server starts listening!===================");
 });
