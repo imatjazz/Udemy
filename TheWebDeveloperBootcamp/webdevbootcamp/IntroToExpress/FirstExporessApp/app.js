@@ -16,7 +16,6 @@ app.get("/r/:subredditName", function(req,res){
     res.send("WELCOE TO SUBREDDIT!!!");
 });
 
-
 app.get("*", function(req,res){
     res.send("WRONG TURN!!!");
 });

@@ -28,12 +28,9 @@ app.get("/repeat/:str/:int", function(req,res){
     res.send(result);
 });
 
-
 app.get("*", function(req,res){
     res.send("Sorry, page not found. Try again!")
 });
-
-
 
 app.listen(3000, function(){
     console.log("========== SERVER HAS STARTED!!!========== ")
